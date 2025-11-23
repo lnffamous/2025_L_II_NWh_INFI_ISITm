@@ -10,7 +10,7 @@ o Continuous Integration, Continuous Delivery i Continuous Deployment.
   $ python -m venv .venv
 
   # aktywowanie hermetycznego środowiska
-  $ source .venv/Source/activate
+  $ source .venv/Script/activate
   $ pip install -r requirements.txt
   $ pip install -r test_requirements.txt
 
@@ -48,7 +48,7 @@ o Continuous Integration, Continuous Delivery i Continuous Deployment.
   ...
 
   # aktywacja 
-  $ source .venv/Source/activate
+  $ source .venv/Script/activate
   ```
 
 - Integracja z TravisCI:

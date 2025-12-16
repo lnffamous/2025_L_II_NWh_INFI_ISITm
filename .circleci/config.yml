@@ -8,6 +8,9 @@ jobs:
       - checkout
       - run: make deps
       - run: make test
+      - run:
+          name: List files
+          command: ls -la
       - run: make docker_build
 
 workflows:

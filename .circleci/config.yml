@@ -4,14 +4,13 @@ jobs:
   build-and-test:
     machine:
       image: ubuntu-2204:2024.01.2
+      docker_layer_caching: true
     steps:
       - checkout
       - run: make deps
       - run: make test
-      - run:
-          name: List files
-          command: ls -la
       - run: make docker_build
+      - run: make docker_push
 
 workflows:
   basic:

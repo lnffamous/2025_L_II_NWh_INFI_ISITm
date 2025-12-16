@@ -13,7 +13,7 @@ test:
 	PYTHONPATH=. py.test --verbose -s
 
 docker_build:
-	docker build -t hello-world-printer -f Dockerfile $(shell pwd)
+	docker build -t hello-world-printer -f Dockerfile .
 
 docker_run: docker_build
 	docker run \
